@@ -1,1 +1,1 @@
-Modelo de predicciond e Churn
+Modelo de prediccion de Churn
