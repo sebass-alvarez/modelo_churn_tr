@@ -59,21 +59,24 @@ Archivos relevantes detectados en la raíz del repo: :contentReference[oaicite:2
 
 ---
 
-## Instalación
+### Pasos para correr local
 
 ```bash
-# 1) Clonar
+# 1) Clonar repo
 git clone https://github.com/sebass-alvarez/modelo_churn_tr.git
 cd modelo_churn_tr
 
-# 2) Crear entorno virtual
+# 2) Crear y activar entorno virtual
 python -m venv .venv
 
-# 3) Activar
-# Windows (PowerShell):
+# Windows (PowerShell)
 .venv\Scripts\Activate.ps1
-# Mac/Linux:
-source .venv/bin/activate
 
-# 4) Instalar dependencias
+# Mac/Linux
+# source .venv/bin/activate
+
+# 3) Instalar dependencias
 pip install -r requirements.txt
+
+# 4) Levantar API
+uvicorn app:app --reload --host 0.0.0.0 --port 8080
