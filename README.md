@@ -80,3 +80,29 @@ pip install -r requirements.txt
 
 # 4) Levantar API
 uvicorn app:app --reload --host 0.0.0.0 --port 8080
+
+
+### Ejemplo del request
+
+curl -X POST "http://localhost:8080/predict" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "tenure": 12,
+    "monthly_charges": 75.5,
+    "total_charges": 905.3,
+    "support_calls": 2,
+    "contract": "Month-to-month",
+    "payment_method": "Electronic check",
+    "internet_service": "Fiber optic",
+    "tech_support": "No",
+    "online_security": "Yes"
+  }'
+
+#### Response
+
+{
+  "Churn": false,
+  "ProbabilidadChurn": 0.2134,
+  "Threshold": 0.5
+}
+
