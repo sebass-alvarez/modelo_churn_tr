@@ -2,7 +2,7 @@ Modelo de predicción de Churn
 
 Proyecto en Python para **entrenar** y/o **servir** un modelo de predicción de *churn* (deserción) usando un artefacto serializado (`.pkl`) y un dataset de ejemplo.
 
-> En este repositorio encontrarás scripts de entrenamiento/inferencia, un dataset (`customer_churn_dataset.csv`) y un modelo ya entrenado (`modelo_xgboost_churn.pkl`). :contentReference[oaicite:1]{index=1}
+> En este repositorio encontrarás scripts de entrenamiento/inferencia, un dataset (`customer_churn_dataset.csv`) y un modelo ya entrenado (`modelo_xgboost_churn.pkl`). 
 
 ---
 
@@ -36,7 +36,7 @@ Este repositorio contiene un flujo típico de *Machine Learning* para churn:
 
 ## Estructura del repositorio
 
-Archivos relevantes detectados en la raíz del repo: :contentReference[oaicite:2]{index=2}
+Archivos relevantes detectados en la raíz del repo:
 
 - `Modelo_01.py` — entrenamiento / pipeline principal.
 - `Modelo_02_read_pkl.py` — ejemplo de carga del `.pkl` + predicción.
