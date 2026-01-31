@@ -1,4 +1,4 @@
-# modelo_churn_tr — Modelo de predicción de Churn
+Modelo de predicción de Churn
 
 Proyecto en Python para **entrenar** y/o **servir** un modelo de predicción de *churn* (deserción) usando un artefacto serializado (`.pkl`) y un dataset de ejemplo.
 
